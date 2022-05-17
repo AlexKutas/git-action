@@ -10,7 +10,6 @@ jobs:
    slack-notification:
       if: always()
       name: Slack Notification
-      needs: [test, build-ios, upload-ios]
       runs-on: ubuntu-latest
       steps:
         - uses: actions/checkout@v3
